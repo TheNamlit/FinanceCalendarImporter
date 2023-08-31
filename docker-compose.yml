@@ -1,0 +1,8 @@
+services:
+  finance-calendar-importer:
+    image: thenamlit/finance-calendar-importer:0.0.1
+    build: .
+    restart: always
+    container_name: finance-calendar-importer
+    ports:
+      - "8080:8080"
